@@ -32,4 +32,5 @@ RUN chown operative:operative /home/operative
 RUN chmod 777 /home/operative
 USER operative
 WORKDIR /home/operative
+ENV AZURE_CONFIG_DIR=/home/operative
 ENV HOME=/home/operative
