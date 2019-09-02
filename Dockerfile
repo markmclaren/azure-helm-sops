@@ -26,6 +26,8 @@ RUN chmod 700 get_helm.sh
 RUN ./get_helm.sh
 RUN helm plugin install https://github.com/futuresimple/helm-secrets
 
+RUN ln -sf /bin/bash /bin/sh
+
 RUN mkdir /home/operative
 RUN groupadd -r operative && useradd -d /home/operative --no-log-init -g operative operative
 RUN chown operative:operative /home/operative 
