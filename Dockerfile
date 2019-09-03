@@ -4,6 +4,7 @@ RUN apt-get update
 RUN apt-get --assume-yes install software-properties-common
 RUN apt-get --assume-yes install curl
 RUN apt-get --assume-yes install git
+RUN apt-get --assume-yes install jq
 
 ENV GOPATH /go
 ENV HELM_HOME /helm
